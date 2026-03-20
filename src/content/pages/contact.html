@@ -1,6 +1,6 @@
 ---
-title: "Contact Us | Camberwellness Medical Practice Camberwell VIC"
-description: "Contact Camberwellness Medical Practice in Camberwell. Call (03) 9600 2661, visit us at 124 Camberwell Rd, or send us a message. Open Monday to Saturday."
+title: "Contact Us | Oakwell GP & Skin VIC"
+description: "Contact Oakwell GP & Skin in Oakwell VIC. Call (03) 8360 3313, visit us at 99 Parkside Dr, Oakwell VIC 3311 or send us a message. Open Monday to Saturday."
 permalink: "/contact/"
 ---
 
@@ -25,7 +25,7 @@ permalink: "/contact/"
             <p class="cs-text">
                 Have a question or need to book an appointment? You can call us, book online through HotDoc, or send a message using the form below. 
             </p>
-            <a href="" class="cs-button-solid">Book on HotDoc</a>
+            <a href="https://www.hotdoc.com.au/" target="_blank" class="cs-button-solid">Book on HotDoc</a>
         </div>
     </div>
     <!--Background Color-->
@@ -55,6 +55,7 @@ permalink: "/contact/"
                     </p>
                 </div>
 
+                <!-- Note it's in <form> that you specify the action="" attribute for post-submission destination -->
                 <form id="cs-form-265" name="contact" method="post" data-netlify="true" action="/success/">
                     <label>
                         Name
@@ -84,10 +85,12 @@ permalink: "/contact/"
             <div class="cs-right-section">
                 <!--Email-->
                 <span class="cs-header">Email</span>
-                <a class="cs-link" href="mailto:{{ client.email }}">{{ client.email }}</a>
+                <!-- <a class="cs-link" href="mailto:{{ client.email }}">{{ client.email }}</a> -->
+                 <a class="cs-link">{{ client.email }}</a>
                 <!--Phone-->
                 <span class="cs-header">Phone</span>
-                <a class="cs-link" href="tel:{{ client.phoneForTel }}">{{ client.phoneFormatted }}</a>
+                <!-- <a class="cs-link" href="tel:{{ client.phoneForTel }}">{{ client.phoneFormatted }}</a> -->
+                <a class="cs-link">{{ client.phoneFormatted }}</a>
                 <!--Address-->
                 <span class="cs-header">Address</span>
                 <a class="cs-link" target="_blank" href="{{ client.address.mapLink }}">
