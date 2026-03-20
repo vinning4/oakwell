@@ -6,7 +6,7 @@
     <div class="cs-container">
         <!--Nav Logo-->
         <a href="/" class="cs-logo" aria-label="back to home">
-            <img src="/assets/svgs/logo-1b.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+            <img src="/assets/svgs/logo-2.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
         </a>
         <!--Navigation List-->
         <nav class="cs-nav" role="navigation">
@@ -34,33 +34,58 @@
 
                     <li class="cs-li">
                         <a href="/services/" class="cs-li-link {% if page.url == "/services/" %} cs-active {% endif %}">
-                            Services
+                            Medical Services
+                        </a>
+                    </li>
+
+                    <li class="cs-li">
+                        <a href="/skin-services/" class="cs-li-link {% if page.url == "/skin-services/" %} cs-active {% endif %}">
+                            Skin & Cosmetic Care
                         </a>
                     </li>
 
                     <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                    <!--
                     <li class="cs-li cs-dropdown">
                         <span class="cs-li-link {% if page.url == "/fees/" or page.url == "/faq/" %} cs-active {% endif %}">
-                            Information &#9660;
-                            <!-- <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true"> -->
-                            <!--No need for above dropdown svg coz using html charac code-->
+                            Skin & Cosmetic Care &#9660;
                         </span>
                         <ul class="cs-drop-ul">
                             <li class="cs-drop-li">
-                                <a href="/fees/" class="cs-li-link cs-drop-link">Fees</a>
+                                <a href="/fees/" class="cs-li-link cs-drop-link">Anti‑wrinkle injections</a>
                             </li>
                             <li class="cs-drop-li">
-                                <a href="/faq/" class="cs-li-link cs-drop-link">FAQ</a>
+                                <a href="/faq/" class="cs-li-link cs-drop-link">Skin rejuvenation & peels</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/faq/" class="cs-li-link cs-drop-link">Skin cancer treatments</a>
                             </li>
                         </ul>
                     </li>
-                    <!-- Not using Blog list item below..
-                    <li class="cs-li">
-                        <a href="/blog/" class="cs-li-link {% if page.url == "/blog/" %} cs-active {% endif %}">
-                            Blog
-                        </a>
-                    </li> -->
+                    -->
+                    
+                    <li class="cs-li cs-dropdown">
+                        <span class="cs-li-link {% if page.url == "/fees/" or page.url == "/faq/" or page.url == "/new-patients/" %} cs-active {% endif %}">
+                            Patient Info &#9660;
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="/fees/" class="cs-li-link cs-drop-link">Fees & Billing</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/new-patients/" class="cs-li-link cs-drop-link">New Patients</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/faq/" class="cs-li-link cs-drop-link">FAQ & Policies</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li class="cs-li cs-hide-on-desktop">
+                        <a href="/contact/" class="cs-li-link {% if page.url == "/contact/" %} cs-active {% endif %}">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="cs-li cs-hide-on-mobile">
                         <a href="/contact/" class="cs-li-link {% if page.url == "/contact/" %} cs-active {% endif %}">
                             Contact
                         </a>
@@ -68,7 +93,7 @@
                 </ul>
             </div>
         </nav>
-        <a href="/contact/" class="cs-button-solid cs-nav-button">Contact Us</a>
+        <a href="/contact/" class="cs-button-solid">Book Appointment</a>
 
         <!--Dark Mode toggle button removed below -->
         

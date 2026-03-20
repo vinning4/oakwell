@@ -1,6 +1,6 @@
 ---
-title: "Camberwellness Medical Practice | Family GP Camberwell VIC"
-description: "Experienced family doctors in Camberwell. Bulk billing available. Same-day appointments. Open Monday-Saturday. Chronic disease management, women's health, mental health & more. Book online with EasyVisit."
+title: "Oakwell GP & Skin | Family GP Oakwell VIC"
+description: "Experienced family doctors in Oakwell. Bulk billing available. Same-day appointments. Open Monday-Saturday. Chronic disease management, skin health, mental health & more. Book online with HotDoc."
 permalink: "/"
 tags: "sitemap" # content/content.json will make sure that all pages in content/ are marked with a "sitemap" tag, for automatic sitemap generation. As index.html is not in content/, we need to add it here to ensure the root page is included in the sitemap generation
 ---
@@ -29,178 +29,104 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    Hero CS 143                     -->
-    <!-- ============================================ -->
-
-    <section id="hero-143">
-        <div class="cs-container">
-            <span class="cs-topper">Quality healthcare in Camberwell & East Victoria</span>
-            <h1 class="cs-title">Camberwellness Medical Practice</h1>
-            <p class="cs-text">
-                Comprehensive family medicine with experienced doctors, modern facilities, and personalized care for patients of all ages.
-            </p>
-            <a target="_blank" href="https://www.easyvisit.com.au/locations-loader" class="cs-button-solid">Book Appointment</a>
-        </div>
-
-        <!-- Background Image -->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/background-1e.jpg" | resize({ width: 640, height: 1490 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/background-1e.jpg" | resize({ width: 640, height: 1490 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/background-1e.jpg" | resize({ width: 640, height: 1490 }) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/background-1e.jpg" | resize({ width: 1300, height: 1280 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/background-1e.jpg" | resize({ width: 1300, height: 1280 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/background-1e.jpg" | resize({ width: 1300, height: 1280 }) | jpeg %}" type="image/jpeg">
-            <!--Large Tablet Image-->
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/background-1e.jpg" | resize({ width: 1300, height: 1280 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/background-1e.jpg" | resize({ width: 1300, height: 1280 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/background-1e.jpg" | resize({ width: 1300, height: 1280 }) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image-->
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/background-1e.jpg" | resize({ width: 1812, height: 1280 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/background-1e.jpg" | resize({ width: 1812, height: 1280 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/background-1e.jpg" | resize({ width: 1812, height: 1280 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/background-1e.jpg" | resize({ width: 1812, height: 1280 }) | jpeg %}" alt="clinic building" width="1812" height="1280" loading="eager" decoding="async">
-        </picture>
-    </section>
-
-    <!-- ============================================ -->
-    <!--          Hero stats - Services CS 143             -->
-    <!-- ============================================ -->
-
-    <section id="h-services-143">
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s1.svg" alt="icon" width="52" height="52" aria-hidden="true">
-                </picture>
-                <h2 class="cs-title">Opening Hours</h2>
-                <p class="cs-text">
-                    Mon - Fri: 8am - 6pm<br>
-                    Saturday: 9am - 2pm<br>
-                    Sunday: Closed
-                </p>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s2.svg" alt="icon" width="52" height="52" aria-hidden="true">
-                </picture>
-                <h2 class="cs-title">Call Us</h2>
-                <p class="cs-text">
-                    124 - 126 Camberwell Rd<br>
-                    Camberwell VIC 3123<br>
-                    Tel: (03) 9600 2661
-                </p>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s3.svg" alt="icon" width="52" height="52" aria-hidden="true">
-                </picture>
-                <h2 class="cs-title">EasyVisit</h2>
-                <p class="cs-text">
-                    We are an EasyVisit clinic.<br>
-                    <a href="https://www.easyvisit.com.au" aria-label="download the EasyVisit app" target="_blank">Download the app</a> to manage appointments online.
-                </p>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s4.svg" alt="icon" width="52" height="52" aria-hidden="true">
-                </picture>
-                <h2 class="cs-title">Emergency</h2>
-                <p class="cs-text">
-                    For emergencies call 000.<br>
-                    For after-hours care,<br>call 13 SICK (13 7425).
-                </p>
-            </li>
-        </ul>
-    </section>
-
-
-
 <!-- ============================================ -->
-<!--       Quote - quote CS 2185          -->
+<!--                    Hero CS 143                     -->
 <!-- ============================================ -->
 
-<div id="quote-2185">
+<section id="cta-403">
     <div class="cs-container">
         <div class="cs-content">
-            <p class="cs-quote">
-                "Welcome to Camberwellness, where we've been caring for our local community for 21 years. Our Camberwell GP team provides personalized, quality healthcare in a warm and welcoming environment. From routine check-ups to complex health concerns, we're here to support you all the way."
+            <span class="cs-topper">Oakwell GP & Skin</span>
+            <h2 class="cs-title">Trusted Family Doctors & Skin Care in Oakwell</h2>
+            <p class="cs-text">
+                Caring for our community for 25+ years.<br><br>
+                Comprehensive GP services • Medically supervised skin rejuvenation 
+                • Mixed billing • Online bookings via HotDoc.
             </p>
-            <span class="cs-name">Maria Herera</span>
-            <span class="cs-job">Practice Manager</span>
+            <a href="/contact/" class="cs-button-solid">Book Appointment</a>
         </div>
     </div>
     <!--Background Image-->
     <picture class="cs-background">
-        <source media="(max-width: 600px)"
-                srcset="/assets/images/cliniclobby.jpg">
-        <source media="(min-width: 601px)"
-                srcset="/assets/images/cliniclobby.jpg">
-        <img aria-hidden="true" loading="lazy" decoding="async"
-                src="/assets/images/cliniclobby.jpg"
-                alt="wedding" width="360" height="316">
+        <source media="(max-width: 600px)" srcset="/assets/images/hero-3.jpg">
+        <source media="(min-width: 601px)" srcset="/assets/images/hero-3.jpg">
+        <img loading="lazy" decoding="async" src="/assets/images/hero-3.jpg" alt="cleaner" width="1920" height="660" aria-hidden="true">
     </picture>
+</section>
+
+
+<!-- ============================================ -->
+<!--        Contact Strip CS 325       -->
+<!-- ============================================ -->
+
+<!-- No headers, so no section tag -->
+<div id="contact-strip-325">
+    <ul class="cs-stat-group">
+        <li class="cs-item">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="/assets/svgs/phone.svg" alt="icon" width="30" height="30" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <div class="cs-flex-group">
+                <span class="cs-header">Phone</span>
+                <a class="cs-link">(03) 8360 3313<br>Emergency: 000</a>
+            </div>
+        </li>
+        <li class="cs-item">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="/assets/svgs/loc.svg" alt="icon" width="30" height="30" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <div class="cs-flex-group">
+                <span class="cs-header">Address</span>
+                <a class="cs-link">99 Parkside Dr<br>Oakwell VIC 3311</a>
+            </div>
+        </li>
+        <li class="cs-item">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="/assets/svgs/hours.svg" alt="icon" width="30" height="30" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <div class="cs-flex-group">
+                <span class="cs-header">Hours</span>
+                <span class="cs-hours">Mon – Sat<br>9AM – 9PM</span>
+            </div>
+        </li>
+    </ul>
 </div>
                                 
 
+
 <!-- ============================================ -->
-<!--     Our expert GPs 3 cards - Services CS 282         -->
+<!--      About the Clinic - SBSR CS 1279       -->
 <!-- ============================================ -->
 
-<section id="services-282">
+<section id="sbsr-1279">
     <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/lounge.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/lounge.jpg">
+            <img loading="lazy" decoding="async" src="/assets/images/lounge.jpg" alt="construction" width="738" height="598">
+        </picture>
         <div class="cs-content">
-            <span class="cs-topper">Key services at our Camberwell medical centre</span>
-            <h2 class="cs-title">Our expert GPs offer a range of services</h2>
-            <!-- <p class="cs-text">
-                Click the cards below to see all our GP services.
-            </p> -->
+            <div class="cs-flex">
+                <span class="cs-topper">About the clinic</span>
+                <h2 class="cs-title">Committed to lifelong care</h2>
+            </div>
+            <p class="cs-text">
+                At Oakwell GP & Skin, we provide trusted general healthcare alongside medically supervised skin and cosmetic services. Our experienced team supports families through preventive health, chronic care, and subtle aesthetic treatments like anti-wrinkle injections and skin peels — always with your wellbeing first.
+                <br><br>
+                Healthcare made personal and accessible. Since 1999.
+            </p>
         </div>
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <a class="cs-link" href="/services/">
-                    <h3 class="cs-h3">General Practice</h3>
-                    <p class="cs-item-text">
-                        Routine health checks and consults.<br>
-                        Chronic disease management.<br>
-                        Preventive care and health screenings.
-                    </p>
-                    <span class="cs-fake-link">Read More >>
-                    </span>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a class="cs-link" href="/services/">
-                    <h3 class="cs-h3">Family Medicine</h3>
-                    <p class="cs-item-text">
-                        Pediatric care from infancy.<br>
-                        Men's and women's health.<br>
-                        Elderly care and health assessments.
-                    </p>
-                    <span class="cs-fake-link">Read More >>
-                    </span>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a class="cs-link" href="/services/">
-                    <h3 class="cs-h3">Specialized Care</h3>
-                    <p class="cs-item-text">
-                        Minor procedures and wound care.<br>
-                        Vaccinations and travel medicine.<br>
-                        Mental health support.
-                    </p>
-                    <span class="cs-fake-link">Read More >>
-                    </span>
-                </a>
-            </li>
-        </ul>
+    </div>
+    <div class="cs-background">
     </div>
 </section>
+                                
+
 
 <!-- ============================================ -->
-<!--   Learn more 3 cards - Services CS 942         -->
+<!--   new Key Services 6 cards - Services CS 942         -->
 <!-- ============================================ -->
 
 <section id="services-942">
@@ -208,9 +134,9 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <!-- Left Content Section-->
         <div class="cs-content">
             <!-- <span class="cs-topper">Meet the team</span> -->
-            <h2 class="cs-title">Learn more about our clinic</h2>
+            <h2 class="cs-title">Comprehensive GP care</h2>
             <p class="cs-text">
-                Our experienced and caring doctors provide a range of services at transparent prices to ensure you receive the highest standard of care.
+                Full range of family medicine for all ages and life stages.
             </p>
         </div>
         <ul class="cs-card-group">
@@ -218,162 +144,262 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                 <picture class="cs-icon-wrapper">
                     <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/doctor.svg" alt="doctor" width="40" height="40">
                 </picture>
-                <h3 class="cs-h3">Our Doctors</h3>
+                <h3 class="cs-h3">General Consultations</h3>
                 <p class="cs-item-text">
-                    AHPRA registered practitioners.<br>
-                    Ongoing professional development.<br>
-                    Multilingual.
+                    Preventative health assessments
                 </p>
-                <a href="/about/" class="cs-link">About us</a>
-                <!--Background Image-->
-                <picture class="cs-background">
-                    <img loading="lazy" decoding="async" src="/assets/images/ourdocs.jpg" alt="doctors" width="480" height="425">
-                </picture>
             </li>
             <li class="cs-item">
                 <picture class="cs-icon-wrapper">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/info.svg" alt="info" width="40" height="40">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/heart.svg" alt="info" width="40" height="40">
                 </picture>
-                <h3 class="cs-h3">Fees & Info</h3>
+                <h3 class="cs-h3">Men's & Women's Health</h3>
                 <p class="cs-item-text">
-                    Bulk billing available.<br>
-                    Medicare and private health accepted.<br>
-                    Clear fee structure.
+                    Personalised care plans
                 </p>
-                <a href="/fees/" class="cs-link">Our Fees</a>
-                <!--Background Image-->
-                <picture class="cs-background">
-                    <img loading="lazy" decoding="async" src="/assets/images/fees.jpg" alt="money" width="480" height="425">
-                </picture>
             </li>
             <li class="cs-item">
                 <picture class="cs-icon-wrapper">
                     <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/services.svg" alt="services" width="40" height="40">
                 </picture>
-                <h3 class="cs-h3">What We Do</h3>
+                <h3 class="cs-h3">Disease Management</h3>
                 <p class="cs-item-text">
-                    Complete health assessments.<br>
-                    Chronic disease management.<br>
-                    Preventive care plans.
+                    Diabetes, heart health, asthma
                 </p>
-                <a href="/services/" class="cs-link">Our Services</a>
-                <!--Background Image-->
-                <picture class="cs-background">
-                    <img loading="lazy" decoding="async" src="/assets/images/services.jpg" alt="patient" width="480" height="425">
+            </li>
+        </ul>
+
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/syringe.svg" alt="doctor" width="40" height="40">
                 </picture>
+                <h3 class="cs-h3">Travel Health</h3>
+                <p class="cs-item-text">
+                    Routine + specialist vaccinations
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/clipboard.svg" alt="info" width="40" height="40">
+                </picture>
+                <h3 class="cs-h3">Preventive Screening</h3>
+                <p class="cs-item-text">
+                    Cancer checks, lifestyle assessments
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-icon-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/bandaid.svg" alt="services" width="40" height="40">
+                </picture>
+                <h3 class="cs-h3">Minor Procedures</h3>
+                <p class="cs-item-text">
+                    Wound care, skin lesion removal
+                </p>
+            </li>
+        </ul>
+        <a href="/services/" class="cs-button-outline">View all medical services&nbsp;&nbsp;&rarr;</a>
+    </div>
+    <!--Waves Background-->
+    <!--
+    <picture class="cs-waves">
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/waves-m.svg">
+        <source media="(min-width: 601px)" srcset="/assets/images/cosmetics.jpg">
+        <img loading="lazy" decoding="async" src="/assets/images/cosmetics.jpg" alt="waves graphic" width="1920" height="331" aria-hidden="true">
+    </picture>
+    -->
+</section>
+
+
+
+
+<!-- ============================================ -->
+<!--     Skin services 3 cards - Services CS 282   -->
+<!-- ============================================ -->
+
+<section id="services-282">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Skin & Cosmetic Care</span>
+            <h2 class="cs-title">Medically supervised skin rejuvenation</h2>
+            <p class="cs-text">
+                All treatments require consultation. Please book via HotDoc.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a class="cs-link" href="/services/">
+                    <h3 class="cs-h3">&#128137; Anti-Wrinkle Injections</h3>
+                    <p class="cs-item-text">
+                        Forehead, crow's feet, frown lines
+                        <br>*30 min consultation*
+                    </p>
+                    <span class="cs-fake-link">Read More >>
+                    </span>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="/services/">
+                    <h3 class="cs-h3">&#127807; Skin Peels & Rejuvenation</h3>
+                    <p class="cs-item-text">
+                        Texture improvement, even tone
+                        <br>*Minimal downtime*
+                    </p>
+                    <span class="cs-fake-link">Read More >>
+                    </span>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="/services/">
+                    <h3 class="cs-h3">&#129524; Minor Cosmetic Procedures</h3>
+                    <p class="cs-item-text">
+                        Tailored advice for your needs
+                        <br>*Doctor-led only*
+                    </p>
+                    <span class="cs-fake-link">Read More >>
+                    </span>
+                </a>
+            </li>
+        </ul>
+        <picture class="cs-cosmetic">
+            <source media="(max-width: 600px)" srcset="/assets/images/cosmetics.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/cosmetics.jpg">
+            <img loading="lazy" decoding="async" src="/assets/images/cosmetics.jpg" alt="dropper bottles" width="900" height="600" aria-hidden="true">
+        </picture>
+    </div>
+</section>
+
+
+
+<!-- ============================================ -->
+<!--    Meet our Docs - Services CS 279           -->
+<!-- ============================================ -->
+
+<section id="services-279">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper"></span>
+            <h2 class="cs-title">Meet the doctors at Oakwell</h2>
+            <p class="cs-text">
+                Our experienced FRACGP‑qualified doctors provide family medicine, skin health, and cosmetic treatments with a focus on continuity of care. You can book the next available appointment using the Book Appointment button.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/doc1.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/doc1.jpg">
+                    <img loading="lazy" decoding="/assets/images/doc1.jpg" alt="doctor" width="348" height="433" aria-hidden="true">
+                </picture>
+                <div class="cs-box">
+                    <h3 class="cs-h3">Dr. Andrew Blake</h3>
+                    <h2 class="cs-h2">MBBS, FRACGP</h2>
+                    <p class="cs-text">Special interest in men's health, chronic disease management, and preventive care for all ages.</p>
+                    <a class="cs-button-transparent" aria-label="doctor profile" href="">Full Profile</a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/doc2.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/doc2.jpg">
+                    <img loading="lazy" decoding="/assets/images/doc2.jpg" alt="doctor" width="348" height="433" aria-hidden="true">
+                </picture>
+                <div class="cs-box">
+                    <h3 class="cs-h3">Dr. Nguyet Tu</h3>
+                    <h2 class="cs-h2">MBBS, FRACGP</h2>
+                    <p class="cs-text">Focus on women's health, fertility, shared maternity care, and subtle skin rejuvenation treatments.</p>
+                    <a class="cs-button-transparent" aria-label="doctor profile" href="">Full Profile</a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/doc3.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/doc3.jpg">
+                    <img loading="lazy" decoding="/assets/images/doc3.jpg" alt="doctor" width="348" height="433" aria-hidden="true">
+                </picture>
+                <div class="cs-box">
+                    <h3 class="cs-h3">Dr. Noa Dahan</h3>
+                    <h2 class="cs-h2">MBBS, FRACGP</h2>
+                    <p class="cs-text">Blends general practice with a special interest in cosmetic medicine, aiming for natural-looking results.</p>
+                    <a class="cs-button-transparent" aria-label="doctor profile" href="">Full Profile</a>
+                </div>
             </li>
         </ul>
     </div>
-    <!--Waves Background-->
-    <picture class="cs-waves">
-        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/waves-m.svg">
-        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/waves.svg">
-        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/waves.svg" alt="waves graphic" width="1920" height="331" aria-hidden="true">
-    </picture>
 </section>
 
 
-<!--               4x SBS below                 -->
-                                
+
 <!-- ============================================ -->
-<!--                 Side By Side 1st             -->
+<!--     Why Choose Us - Services CS 281       -->
 <!-- ============================================ -->
 
-<section id="RTsbs-71">
+<section id="services-281">
     <div class="cs-container">
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/whychooseus.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/whychooseus.jpg">
-            <img loading="lazy" decoding="async" src="/assets/images/whychooseus.jpg" alt="reception" width="500" height="552" aria-hidden="true">
-        </picture>
         <div class="cs-content">
-            <!-- <span class="cs-topper">Why choose us</span> -->
-            <h2 class="cs-title">Why choose us</h2>
-            <p class="cs-text">
-                Camberwellness has... <br>
-                &#10004; Served the community for 21 years and counting.<br>
-                &#10004; Experienced, fully qualified doctors.<br>
-                &#10004; Modern facilities and equipment.<br>
-                &#10004; Comprehensive family healthcare.<br>
-                &#10004; Same-day appointments available.<br>
-                &#10004; A convenient location with parking.
-            </p>
-            <!-- <a class="cs-button-solid" aria-label="learn more about our clinic" href="">Learn More</a> -->
+            <h2 class="cs-title">Why patients choose Oakwell</h2>
+            <div class="cs-flex">
+                <p class="cs-text">
+                    Personalised care from an experienced team you can trust, with doctors who take the time to listen, understand your concerns, and support you and your family through every stage of life.
+                </p>
+            </div>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <img class="cs-icon" aria-hidden="true" src="/assets/svgs/license.svg" alt="license icon" width="40" height="40" loading="lazy" decoding="async">
+                <h3 class="cs-h3">Medical expertise you trust</h3>
+                <p class="cs-item-text">
+                    All doctors are FRACGP-qualified with decades of combined experience in general practice and skin health. Fully accredited practice.
+                </p>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" aria-hidden="true" src="/assets/svgs/heart.svg" alt="svg icon" width="29" height="29" loading="lazy" decoding="async">
+                <h3 class="cs-h3">One roof, complete care</h3>
+                <p class="cs-item-text">
+                    Comprehensive GP services plus medically supervised cosmetic treatments — no referrals needed.
+                </p>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" aria-hidden="true" src="/assets/svgs/hours.svg" alt="svg icon" width="33" height="30" loading="lazy" decoding="async">
+                <h3 class="cs-h3">Easy booking & access</h3>
+                <p class="cs-item-text">
+                    Online appointments via HotDoc. Mixed billing. Central Oakwell location with free parking nearby.
+                </p>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" aria-hidden="true" src="/assets/svgs/lock.svg" alt="svg icon" width="37" height="30" loading="lazy" decoding="async">
+                <h3 class="cs-h3">Private & confidential</h3>
+                <p class="cs-item-text">
+                    All consultations completely private. Secure electronic records. AHPRA compliant.
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+
+<!-- ============================================ -->
+<!--        Book appt - CTA CS 1071                -->
+<!-- ============================================ -->
+
+<section id="cta-1071">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Ready for your appointment?</span>
+                <h2 class="cs-title">Book a consult via HotDoc</h2>
+                <p class="cs-text">
+                    New patients welcome • Mixed billing available • Same-day appointments often available
+                </p>
+            </div>
+            <div class="cs-button-box">
+                <a href="" class="cs-button-solid">Book Appointment</a>
+            </div>
         </div>
     </div>
 </section>
                                 
-<!-- ============================================ -->
-<!--             Side By Side Reverse 2nd         -->
-<!-- ============================================ -->
-
-<section id="RTsbsr-71">
-    <div class="cs-container">
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/ourdoctors.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/ourdoctors.jpg">
-            <img loading="lazy" decoding="async" src="/assets/images/ourdoctors.jpg" alt="body builder" width="500" height="552" aria-hidden="true">
-        </picture>
-        <div class="cs-content">
-            <!-- <span class="cs-topper">Dedicated Camberwell GPs</span> -->
-            <h2 class="cs-title">Our doctors</h2>
-            <p class="cs-text">
-                Doctors at Camberwellness Medical Practice  are experienced in every aspect of family health and can help you at any stage of life. Some GPs also have additional qualifications and specializations.
-            </p>
-            <a class="cs-button-solid" aria-label="learn more about our team" href="/about/">Meet Our Team</a>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================ -->
-<!--           Side By Side 3rd                   -->
-<!-- ============================================ -->
-
-<section id="RTsbst-71">
-    <div class="cs-container">
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/mymedicare.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/mymedicare.jpg">
-            <img loading="lazy" decoding="async" src="/assets/images/mymedicare.jpg" alt="body builder" width="500" height="552" aria-hidden="true">
-        </picture>
-        <div class="cs-content">
-            <!-- <span class="cs-topper">Get MyMedicare</span> -->
-            <h2 class="cs-title">My Medicare</h2>
-            <p class="cs-text">
-                Our clinic participates in MyMedicare. It is voluntary and free to register.<br><br>
-                By registering and selecting your preferred doctor, you will have access to —<br>
-                &#10004; Longer telehealth consults.<br>
-                &#10004; Additional services for chronic disease support.<br>
-                &#10004; Aged care planning.<br>
-                &#10004; Streamlined communication between GPs looking after you.
-            </p>
-            <a class="cs-button-solid" aria-label="about MyMedicare voluntary registration program" href="https://www.ipn.com.au/mymedicare" target="_blank">About MyMedicare</a>
-        </div>
-    </div>
-</section>
-                                
-<!-- ============================================ -->
-<!--             Side By Side Reverse 4th         -->
-<!-- ============================================ -->
-
-<section id="RTsbsr-71-2">
-    <div class="cs-container">
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/easyvisit.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/easyvisit.jpg">
-            <img loading="lazy" decoding="async" src="/assets/images/easyvisit.jpg" alt="body builder" width="500" height="552" aria-hidden="true">
-        </picture>
-        <div class="cs-content">
-            <!-- <span class="cs-topper">Dedicated Camberwell GPs</span> -->
-            <h2 class="cs-title">Book with the EasyVisit app</h2>
-            <p class="cs-text">
-                Take the hassle out of healthcare. EasyVisit simplifies your healthcare journey, giving you greater control and convenience. Easily book, change or cancel appointments with just a few clicks. Download EasyVisit from the App Store to book your appointment with your doctor today.
-            </p>
-            <a class="cs-button-solid" aria-label="download the EasyVisit app" href="https://www.easyvisit.com.au" target="_blank">Download the app</a>
-        </div>
-    </div>
-</section>
 
 
-    {% include 'sections/cta.html' %}
 {% endblock %}

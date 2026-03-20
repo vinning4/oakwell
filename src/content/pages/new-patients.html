@@ -1,0 +1,119 @@
+---
+title: "New Patients | Oakwell Medical Practice"
+description: "Comprehensive GP services including chronic disease management, mental health, travel medicine, skin checks and women's health in Oakwell VIC. New patients welcome."
+permalink: "/new-patients/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/new-patients.css">
+    <link rel="stylesheet" href="/assets/css/local.css"/>
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--   New pats hero - SBSR CS 2172          -->
+<!-- ============================================ -->
+
+<section id="sbsr-2172">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/new-pats.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/new-pats.jpg">
+            <img loading="lazy" decoding="async" src="/assets/images/new-pats.jpg" alt="room" width="960" height="900">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper"></span>
+            <h2 class="cs-title">New patients welcome</h2>
+            <p class="cs-text">We accept new patients of all ages. Quick registration, easy first visit. See the process below.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================================ -->
+<!--    4 steps + What to bring - Steps CS 284     -->
+<!-- ============================================ -->
+
+<section id="steps-284">
+    <div class="cs-container">
+        <!-- Left Section -->
+        <div class="cs-content">
+            <span class="cs-topper"></span>
+            <h2 class="cs-title">Registration Process &rarr;</h2>
+            <p class="cs-text">
+                <br>
+                &#9989; <strong>&nbsp; What to bring:</strong><br>
+                • Medicare card<br>
+                • Current medications list<br>
+                • Recent test results
+            </p>
+            <p class="cs-text">
+                &#9989; <strong>&nbsp; First visit includes:</strong><br>
+                • Full medical history<br>
+                • Physical examination<br>
+                • Personalised health plan<br>
+                • Health fund check
+            </p>
+        </div>
+        <!-- Right Section -->
+        <ul class="cs-right-section">
+            <li class="cs-item">
+                <span class="cs-number">1</span>
+                <p class="cs-item-text">
+                    <strong>Book online </strong>via HotDoc. Choose your doctor.
+                </p>
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">2</span>
+                <p class="cs-item-text">
+                    <strong>Complete Intake Form. </strong>Digital form sent to your email.
+                </p>
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">3</span>
+                <p class="cs-item-text">
+                    <strong>Bring to Appointment: </strong>Medicare card + photo ID.
+                </p>
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">4</span>
+                <p class="cs-item-text">
+                    <strong>Meet Your Doctor! </strong>45-minute new patient consult.
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+
+
+<!-- ============================================ -->
+<!--        Book appt - CTA CS 1071                -->
+<!-- ============================================ -->
+
+<section id="cta-1071">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper"></span>
+                <h2 class="cs-title">Start here</h2>
+                <p class="cs-text">
+                    Book your first appointment today &rarr;
+                </p>
+            </div>
+            <div class="cs-button-box">
+                <a href="" class="cs-button-solid">Book Appointment</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock %}
